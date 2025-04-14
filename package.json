@@ -1,0 +1,30 @@
+{
+  "name": "variaveis_ambiente_ebac",
+  "version": "1.0.0",
+  "description": "Variaveis de Ambiente Cypress",
+  "homepage": "https://github.com/danimaleski/variaveis_ambiente_ebac#readme",
+  "bugs": {
+    "url": "https://github.com/danimaleski/variaveis_ambiente_ebac/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danimaleski/variaveis_ambiente_ebac.git"
+  },
+  "license": "ISC",
+  "author": "daniella",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run",
+    "testEnvCyOpen": "CYPRESS_HOST=http://localhost npx cypress open",
+    "testEnvCmdCyOpen": "npx cypress open --env HOST=http://localhost"
+  },
+  "devDependencies": {
+    "cypress": "^14.3.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "puppeteer": "^24.6.1",
+    "puppeteer-core": "^24.6.1"
+  }
+}
